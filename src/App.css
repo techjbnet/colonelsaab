@@ -1,0 +1,305 @@
+body {
+  font-family: "Rubik", sans-serif !important;
+  background-color: "#F3F1E2" !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-success {
+  color: #277977 !important;
+}
+
+.text-warning {
+  color: #f99f49 !important;
+}
+
+.text-pink {
+  color: #e5657c !important;
+}
+
+.bg-success {
+  background-color: #277977 !important;
+}
+
+.bg-warning {
+  background-color: #f99f49 !important;
+}
+
+.border-success {
+  border-color: #277977 !important;
+}
+
+.border-warning {
+  border-color: #f99f49 !important;
+}
+
+.border-pink {
+  border-color: #e5657c !important;
+}
+
+.menu-button:hover {
+  background-color: #f99f49 !important;
+  border-color: #277977 !important;
+}
+
+/* .menu-button:hover img {
+  display: inline-block !important;
+} */
+
+.custom-cursor {
+  cursor: pointer !important;
+}
+
+.footer-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 0;
+  height: 0.1em;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.footer-menu:hover::before {
+  width: 100%;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.1em;
+  background-color: white;
+  transition: width 0.25s ease-out;
+}
+
+.menu:hover::before {
+  width: 100%;
+}
+
+.btn-social-footer {
+  color: #f99f49 !important;
+  background-color: #ffffff !important;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.btn-social-footer:hover {
+  color: #277977 !important;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.btn-menu-footer {
+  color: rgb(255, 255, 255) !important;
+  background-color: #277977 !important;
+}
+
+.btn-menu-footer:hover {
+  color: #f99f49 !important;
+}
+
+.image-reveal {
+  -webkit-mask: url("../src/assets/images/natureSprite.png");
+  mask: url("../src/assets/images/natureSprite.png");
+  -webkit-mask-size: 6100% 100%;
+  mask-size: 6100% 100%;
+  -webkit-animation: mask-playzero 2.4s steps(60) forwards;
+  animation: mask-playzero 2.4s steps(60) forwards;
+}
+
+@-webkit-keyframes mask-playzero {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes mask-playzero {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+.menu-text > span::after {
+  content: ". . .";
+  bottom: 0.3rem;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #277977 !important;
+}
+
+.cookie {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* .whatsOn-Slider-Card {
+  height: 17rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .whatsOn-Slider-Card {
+    height: 22rem !important;
+  }
+} */
+
+.menu-item {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.menu-item::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.videoElement {
+  width: 100% !important;
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+}
+
+/* .mailChimp div {
+  display: flex !important;
+} */
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.slick-slide > div {
+  height: 100% !important;
+}
+
+/* @media only screen and (min-width: 500px) and (max-width: 992px) {
+  .whatsOn-Slider-Card {
+    height: 19rem !important;
+  }
+} */
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
+}
+
+.px-6 {
+  padding-right: 7.5rem !important;
+  padding-left: 7.5rem !important;
+}
+
+.rounded-top-end {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
+.rounded-bottom-end {
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.press-div:hover {
+  background-color: #277977 !important;
+}
+
+.rc-slider-rail {
+  background-color: #f99f49 !important;
+}
+
+.rc-slider-track {
+  background-color: #277977 !important;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  position: absolute;
+  background-color: #277977;
+  width: 12rem;
+  bottom: 2rem;
+  z-index: 1;
+  color: white;
+}
+
+.dropup-content a {
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropup-content a:hover {
+  background-color: #f99f49;
+}
+
+@media only screen and (min-width: 992px) {
+  .slick-prev:before {
+    font-size: 2rem !important;
+  }
+
+  .slick-next:before {
+    font-size: 2rem !important;
+  }
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
