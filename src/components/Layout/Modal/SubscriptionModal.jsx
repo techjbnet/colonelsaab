@@ -18,32 +18,32 @@ const CustomForm = ({ status, message, onValidated, download, pdf }) => {
         FNAME: name.value,
         PHONE: phone,
       });
-      // if (download) {
-      //   var formData = new FormData();
-      //   // name should be always AfternoonTeaMenu, ALaCarte, ChristmasMenu2022, CSLunch, DiwaliMenu, DrinksMenu, New Year Menu 2023, TastingMenu
-      //   if (pdf === "ALACARTE") {
-      //     formData.append("name", "ALaCarte.pdf");
-      //   } else if (pdf === "AfternoonTeaMenu") {
-      //     formData.append("name", "AfternoonTeaMenu.pdf");
-      //   } else if (pdf === "Tasting") {
-      //     formData.append("name", "TastingMenu.pdf");
-      //   }
-      //   formData.append("email", email);
-      //   formData.append("subject", subject);
-      //   formData.append("message", template);
-      //   axios
-      //     .post("http://localhost:4010/send", formData, {
-      //       headers: {
-      //         "Content-Type": "multipart/form-data",
-      //       },
-      //     })
-      //     .then((resp) => {
-      //       console.log(resp.data);
-      //     })
-      //     .catch((error) => {
-      //       console.log(error);
-      //     });
-      // }
+      if (download) {
+        var formData = new FormData();
+        // name should be always AfternoonTeaMenu, ALaCarte, ChristmasMenu2022, CSLunch, DiwaliMenu, DrinksMenu, New Year Menu 2023, TastingMenu
+        if (pdf === "ALACARTE") {
+          formData.append("name", "ALaCarte.pdf");
+        } else if (pdf === "AfternoonTeaMenu") {
+          formData.append("name", "AfternoonTeaMenu.pdf");
+        } else if (pdf === "Tasting") {
+          formData.append("name", "TastingMenu.pdf");
+        }
+        formData.append("email", email);
+        formData.append("subject", subject);
+        formData.append("message", template);
+        axios
+          .post("http://localhost:4010/send", formData, {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          })
+          .then((resp) => {
+            console.log(resp.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
       email.value = "";
       name.value = "";
       setPhone("");
