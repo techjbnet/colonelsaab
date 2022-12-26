@@ -28,7 +28,7 @@ const IntroVideo = (props) => {
     setTimeout(() => {
       setVideoFinish(true);
       props.setVideoFinish(true);
-      props.setChristmasModal(true);
+      // props.setChristmasModal(true);
     }, 5000);
   }, []);
 

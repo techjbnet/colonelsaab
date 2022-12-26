@@ -1,7 +1,9 @@
 import Download from "../../assets/images/download.png";
 // import DiwaliMenu from "../../assets/pdf/DiwaliMenu.pdf";
 import NEW_YEAR_MENU from "../../assets/pdf/New Year Menu 2023.pdf";
-import ChristmasMenu2022 from "../../assets/pdf/ChristmasMenu2022.pdf";
+import Valentines_MENU from "../../assets/pdf/Valentines Menu 2022.pdf";
+import Vegan_MENU from "../../assets/pdf/Vegan Menu 2022.pdf";
+// import ChristmasMenu2022 from "../../assets/pdf/ChristmasMenu2022.pdf";
 // import TastingMenu from "../../assets/pdf/TastingMenu.pdf";
 // import ALaCarte from "../../assets/pdf/ALaCarte.pdf";
 import CSLunch from "../../assets/pdf/CSLunch.pdf";
@@ -31,11 +33,11 @@ const Section1 = () => {
       pdf: "#AFTERNOONTEAMENU",
       pdfExist: false,
     },
-    {
-      text: "CHRISTMAS DAY MENU",
-      pdf: ChristmasMenu2022,
-      pdfExist: true,
-    },
+    // {
+    //   text: "CHRISTMAS DAY MENU",
+    //   pdf: ChristmasMenu2022,
+    //   pdfExist: true,
+    // },
     {
       text: "NEW YEAR MENU",
       pdf: NEW_YEAR_MENU,
@@ -47,10 +49,19 @@ const Section1 = () => {
     //   pdf: DiwaliMenu,
     //   pdfExist: true,
     // },
-
     {
       text: "BEVERAGES",
       pdf: DrinksMenu,
+      pdfExist: true,
+    },
+    {
+      text: "Vegan",
+      pdf: Vegan_MENU,
+      pdfExist: true,
+    },
+    {
+      text: "Valentine's",
+      pdf: Valentines_MENU,
       pdfExist: true,
     },
   ];
