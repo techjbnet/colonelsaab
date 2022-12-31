@@ -150,16 +150,6 @@ body {
   background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-/* .whatsOn-Slider-Card {
-  height: 17rem;
-}
-
-@media only screen and (max-width: 992px) {
-  .whatsOn-Slider-Card {
-    height: 22rem !important;
-  }
-} */
-
 .menu-item {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
@@ -184,17 +174,34 @@ body {
 
 .slick-slide {
   height: inherit !important;
+  /* visibility: hidden !important; */
+  /* z-index: 998 !important; */
 }
+
+/* .slick-slide.slick-active {
+  visibility: visible !important;
+} */
+
+/* .slick-active.slick-current {
+  z-index: 999 !important;
+} */
 
 .slick-slide > div {
   height: 100% !important;
 }
 
-/* @media only screen and (min-width: 500px) and (max-width: 992px) {
-  .whatsOn-Slider-Card {
-    height: 19rem !important;
-  }
+/* .slick-list {
+  z-index: 999 !important;
 } */
+
+/* .instagram-slide {
+  margin-top: -8rem !important;
+} */
+
+.instagram-slide > div > div > .slick-slide > div {
+  display: flex !important;
+  align-items: flex-end !important;
+}
 
 #mc_embed_signup {
   background: #fff;
