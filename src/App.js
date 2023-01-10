@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "react-phone-number-input/style.css";
 
-import ScrollToTop from "./components/ScrollToTop";
 
 import Homepage from "./pages/Homepage";
 import Story from "./pages/Story";
@@ -35,7 +34,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/story" element={<Story />} />

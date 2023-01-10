@@ -1,6 +1,10 @@
-import Award1 from "../../assets/images/Award1.webp";
-import Award2 from "../../assets/images/Award2.webp";
-import Award3 from "../../assets/images/Award3.webp";
+import { width } from "@mui/system";
+import { Carousel } from "react-bootstrap";
+import Award1 from "../../assets/images/award/Asian Curry Awards (2) 1.png";
+import Award2 from "../../assets/images/award/British Curry Awards 1.png";
+import Award3 from "../../assets/images/award/opentable 1.png";
+import Award4 from "../../assets/images/award/opentable 2.png";
+import Award5 from "../../assets/images/award/opentable 3.png";
 import useWindowSize from "../Hook/windowSize";
 
 const Section1 = () => {
@@ -9,44 +13,21 @@ const Section1 = () => {
     <div className="container-fluid vh-50 px-5 py-3">
       <div className="row">
         <div className="col-12 text-center d-flex flex-column align-items-center">
-          <h2 className="mt-3 text-success">Press</h2>
-          <p className="text-success">
-            Colonel Saab in the Press, Indian restaurant Covent Garden
-          </p>
-          <hr className="text-center w-50" />
-          <h2 className="mt-3 text-success">Awards</h2>
-          <div className="w-100 d-flex justify-content-evenly">
-            <img
-              src={Award1}
-              className={windowSize.width > 600 && "img-fluid"}
-              alt="Award1"
-              style={{
-                width: windowSize.width <= 600 && "60%",
-                height: windowSize.width <= 600 && "60%",
-                padding: windowSize.width <= 600 && "3px",
-              }}
-            />
-            <img
-              src={Award2}
-              className={windowSize.width > 600 && "img-fluid"}
-              alt="Award2"
-              style={{
-                width: windowSize.width <= 600 && "60%",
-                height: windowSize.width <= 600 && "60%",
-                padding: windowSize.width <= 600 && "3px",
-              }}
-            />
-            <img
-              src={Award3}
-              className={windowSize.width > 600 && "img-fluid"}
-              alt="Award3"
-              style={{
-                width: windowSize.width <= 600 && "60%",
-                height: windowSize.width <= 600 && "60%",
-                padding: windowSize.width <= 600 && "3px",
-              }}
-            />
-          </div>
+          <h3 className="fw-bolder mt-5 text-success mb-3">Awards</h3>
+          <Carousel>
+            <Carousel.Item>
+            <div className="d-flex flex-row align-items-center justify-content-around mx-5">
+              <img height={150} style={{width:"150px"}} src={Award1} alt="" />
+              <img height={150} style={{width:"150px"}} src={Award2} alt="" />
+              <img height={150} style={{width:"150px"}} src={Award3}  alt="" />
+              <img height={150} style={{width:"150px"}} src={Award4}  alt="" />
+              <img height={150} style={{width:"150px"}} src={Award5}  alt="" />
+            </div>
+            </Carousel.Item>
+          </Carousel>
+          <h3 className="fw-bolder mt-3 text-success">Press</h3>
+          <hr style={{width:"25%", color:"green", height:"5px", margin:"0"}}/>
+          <p className="fw-bolder text-success fs-5">Colonel Saab in the Press, Indian restaurant Covent Garden </p>
         </div>
       </div>
     </div>
