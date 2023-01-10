@@ -14,13 +14,6 @@ const Section3 = (props) => {
     100: new Date().getFullYear(),
   };
 
-  // useEffect(() => {
-  //   const temp = {};
-  //   for (let i = 0; i <= 25; i++) {
-  //     temp[i * 4] = i + 2000;
-  //   }
-  //   setSliderValue(temp);
-  // }, []);
 
   return (
     <div className="container">
