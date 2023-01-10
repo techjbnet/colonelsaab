@@ -1,4 +1,5 @@
 const Section1 = (props) => {
+  console.log(props)
   return (
     <div className="container-fluid px-2 py-5 ">
       <div className="container">

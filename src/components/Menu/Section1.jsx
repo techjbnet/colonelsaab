@@ -55,12 +55,12 @@ const Section1 = () => {
       pdfExist: true,
     },
     {
-      text: "Vegan",
+      text: "VEGANUARY",
       pdf: Vegan_MENU,
       pdfExist: true,
     },
     {
-      text: "Valentine's",
+      text: "VALENTINE'S",
       pdf: Valentines_MENU,
       pdfExist: true,
     },

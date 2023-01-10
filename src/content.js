@@ -22,6 +22,11 @@ import IndianRestaurantCoventGardenSoho2z from "./assets/images/shopimages/india
 import RestaurantCoventGardenKebabFestival08 from "./assets/images/shopimages/restaurant-covent-garden-kebab-festival-08.webp";
 import RestaurantIndianHolbornCoventGardenBloomsburySoho3 from "./assets/images/shopimages/restaurant-indian-holborn-covent-garden-bloomsbury-soho-3.webp";
 import RestaurantIndianCoventGardenHighballM from "./assets/images/shopimages/restaurant-indian-covent-garden-highball-m.webp";
+import ValentinesDayImage from "./assets/images/shopimages/valentines-whatson-image.jpg"
+import VegunaryImage from "./assets/images/shopimages/vagunary-image.jpg"
+import ValentinesMenuImage from './assets/images/WhatsOnImages/s1.jpg'
+import VeganuaryMenuImage from './assets/images/WhatsOnImages/s2.jpg'
+
 // import RestaurantIndianHolbornCoventGardenBloomsburySoho47 from "./assets/images/shopimages/restaurant-indian-holborn-covent-garden-bloomsbury-soho-47.webp";
 // import IndianTakeawayHolbornChefSohansConfitOfCauliflower from "./assets/images/shopimages/indian-takeaway-holborn-Chef-Sohans-Confit-of-Cauliflower.webp";
 // import IndianRestaurantCoventGardenDiwali1 from "./assets/images/shopimages/indian-restaurant-covent-garden-diwali-1.webp";
@@ -522,6 +527,166 @@ const WhatsOn = [
     </ul>`,
     serialNumber: 10,
     title: "first-year-anniversary-celebrations",
+    shortContent:
+      "Award-winning, luxury Indian restaurant, Colonel Saab will celebrate its first anniversary this October with...",
+  },
+  {
+    heading1: "VALENTINES DAY ",
+    heading2:
+      "Valentine's at Colonel Saab ",
+    image: ValentinesDayImage,
+    content: `<div className="row text-center">
+    <p>
+            At Colonel Saab, we are very excited to be celebrating 'Love' with
+            our guests during this season. The restaurant's concept is based on
+            Love, in fact it is a ‘love letter’ from India by the Choudhary
+            family, who very much recognise and value the importance of romance.
+          </p>
+
+          <p>
+            Each year The Choudhary’s are delighted to invite you to join them
+            over Valentine's weekend – This year is no different and we will be
+            celebrating with roses and special menus galore over the whole
+            weekend, as well as on Valentine’s Day itself - Friday 10th,
+            Saturday 11th as well as Tuesday 14th February 2023.
+          </p>
+          <p>
+            Guests can dine in our extraordinary setting, described as a feast
+            for the eyes, with a treasure trove of eclectic Indian art and
+            artefacts collected by Mr Choudhary's family on their travels. The
+            experience wouldn’t be complete without the 5-star service brought
+            to you by Colonel Saab's staff. They play an indispensable part in
+            the evening's proceedings by bringing the decadent surroundings to
+            life and happily regaling guests with the rich stories and histories
+            of the sumptuous artwork adorning the restaurant. If you are lucky
+            you may even get the chance to hear all about the love story of
+            Colonel and Mem Saab. Will you be able to spot their love letters to
+            one another?
+          </p>
+          <p>
+            There will be an extravagant, love inspired, sharing menu featuring
+            delicacies such as Sabnam ke moti (stuffed mushrooms) or the ever
+            popular Tandoori lamb chops; then finish off with what we call ‘The
+            Happy Ending’ or Gile-E-Firdaus, a dessert associated with love and
+            traditionally served at weddings, garnished with rose petals and
+            fresh berries.
+          </p>
+          <p>
+            As usual our exceptional cocktail menu will be available featuring a
+            couple of ‘love potions’ for the occasion as well as our remarkable
+            wine pairing and champagne menus. All of our lovely guests will
+            receive red roses on arrival by The Colonel Saab family team as an
+            extra special addition to your occasion.
+          </p>
+          <p>
+            Spice up your Valentine’s day and make it an unforgettable one at
+            Colonel Saab.
+          </p>
+          <p>Reservations are essential!</p>
+  
+   
+    <div class="container">
+      <img className="" width="60%" src=${ValentinesMenuImage} alt="saab36" />
+    </div>
+    <div class="col-12 text-center my-3">
+    <a href="https://colonelsaab.co.uk/static/media/Valentines%20Menu%202022.f3c52f423ea04945f656.pdf">
+    <button
+      class="btn mt-3 text-light border border-warning rounded-0 custom-cursor bg-success"
+      >
+      VALENTINES MENU
+      </button>
+    </a>
+      
+    </div>
+
+    <p className="fst-italic">
+            ‘Where did Valentine's Day come from? The story and origins of it's
+            patron saint are shrouded in mystery. We do know that February has
+            long been celebrated as a month of romance, and that the history of
+            St. Valentine’s Day contains vestiges of both Christian and ancient
+            Roman tradition... Today, according to the Greeting Card
+            Association, an estimated 145 million Valentine’s Day cards are sent
+            each year, making it the second largest card- sending holiday of the
+            year after Christmas.’ <a href="https://www.history.com/topics/valentines-day/history-of-valentines-day-2"> Read more...<a/>
+          </p>
+    </div>`,
+    serialNumber: 28,
+    title: "valentinesday-indian-restaurant",
+    shortContent:
+      "Award-winning, luxury Indian restaurant, Colonel Saab will celebrate its first anniversary this October with...",
+  },
+  {
+    heading1: "VEGANUARY",
+    heading2:
+      "If you haven't heard of Veganuary yet, don’t worry we’re here to tell you all about it!",
+    image: VegunaryImage,
+    content: `<div className="row text-center">
+    <p>
+      We will be serving a special tantalising tasting menu in addition to
+      A whole month dedicated to healthier eating and doing more for our
+      planet. After last year's huge success, we are bringing back our
+      Veganuary menu for all of our distinguished customers. Expect to see
+      the mouth watering Jack fruit tacos back on the menu, due to popular
+      demand, as well as more new dishes created for one month only.
+    </p>
+    <p>
+      As most of you may know Indian cuisine has always been ahead of the
+      curve when it comes to veganism. The earliest record of
+      vegetarianism dates back to 5th Century BCE India. The ancient
+      religion of Jainism promotes a meat-free diet. Jain vegetarianism is
+      one of the strictest and most rigorous religiously motivated diets
+      on the Indian subcontinent. At Colonel Saab we are strong believers
+      in sustainability with our founder Roop Partap Choudhary emphasising
+      this through his key practices carried out not just in his London
+      restaurant, but also his luxury hotels in India.
+    </p>
+    <p>
+      “It is great to see in the modern day the ideologies behind vegan
+      diets coming back into popular culture as we all strive to be the
+      best we can be, help others and mother nature.” - Roop Partap
+      Choudhary
+    </p>
+    <p>
+      Colonel Saab’s menu already has a large variety of vegetarian and
+      vegan dishes, and now our culinary experts have come up with a whole
+      vegan menu with dishes such as Vegan dahi sev puri bed of crisp &
+      spiced puff rice and Soya masala curry, chana masala, steam rice,
+      roti to name a couple.
+    </p>
+    <p>
+      Pair that with our wonderful 0% alcohol Gin and Tonics and start
+      planning your detox so that January won’t have to be so blue after
+      all.
+    </p>
+    <div class="container">
+      <img className="" width="60%" src=${VeganuaryMenuImage} alt="saab3" />
+    </div>
+    <div class="container text-center my-3">
+    <a href="https://colonelsaab.co.uk/static/media/Vegan%20Menu%202022.daa96421da54e4d589ba.pdf">
+    <button
+      class="btn mt-3 text-light border border-warning rounded-0 custom-cursor bg-success"
+      >
+      SEE MENU
+      </button>
+    </a> 
+    </div>
+
+    <p>
+      <a href="https://veganuary.com/">https://veganuary.com/</a>
+      &nbsp;says
+      <a href="https://veganuary.com/">JOIN THE PLANT-BASED REVOLUTION</a>
+      Veganuary inspired and supported over 620,000 people to try vegan
+      during our 2022 campaign – with participants from over 220 countries
+      and territories. We have worked with businesses to drive up vegan
+      food provision in shops and restaurants, and have made veganism more
+      visible and accessible through our work with national and
+      international media.”<a href="https://veganuary.com/"> Find out more..</a>
+    </p>
+    </div>
+   
+   `,
+    serialNumber: 27,
+    title: "vegunary-indian-restaurant",
     shortContent:
       "Award-winning, luxury Indian restaurant, Colonel Saab will celebrate its first anniversary this October with...",
   },
