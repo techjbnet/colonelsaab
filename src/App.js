@@ -8,10 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "react-phone-number-input/style.css";
 
-<<<<<<< HEAD
 //import ScrollToTop from "./components/ScrollToTop";
-=======
->>>>>>> 116b2018a7c598b72ef10f255c81240b338b79c3
 
 import Homepage from "./pages/Homepage";
 import Story from "./pages/Story";

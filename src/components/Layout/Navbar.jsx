@@ -382,6 +382,34 @@ const Navbar = () => {
                       <h4 className="text-uppercase">What&apos;s On</h4>
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink
+                      className={
+                        location.pathname === "/whats-on/VALENTINES%20DAY"
+                          ? "d-inline-block p-2 position-relative overflow-hidden menu text-warning text-decoration-none custom-cursor"
+                          : "d-inline-block p-2 position-relative overflow-hidden menu text-light text-decoration-none custom-cursor"
+                      }
+                      to="/whats-on/VALENTINES%20DAY"
+                      end
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                      onMouseOver={(e) => {
+                        if (location.pathname !== "/whats-on/VALENTINES%20DAY") {
+                          e.target.classList.remove("text-light");
+                          e.target.classList.add("text-warning");
+                        }
+                      }}
+                      onMouseOut={(e) => {
+                        if (location.pathname !== "/whats-on/VALENTINES%20DAY") {
+                          e.target.classList.remove("text-warning");
+                          e.target.classList.add("text-light");
+                        }
+                      }}
+                    >
+                      <h4 className="text-uppercase">VALENTINE'S MENU</h4>
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
               <div className="col-12 d-md-none text-center mb-3 mb-md-0">

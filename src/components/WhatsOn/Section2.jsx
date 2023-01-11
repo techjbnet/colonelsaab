@@ -39,7 +39,7 @@ const Section2 = () => {
       content:
         "Valentine's at Colonel Saab ",
       serialNumber: 28,
-      title: "valentinesday-indian-restaurant",
+      title: "VALENTINES DAY",
     },
     {
       image: IndianRestaurantCoventGardenCsBestTreats,
@@ -138,7 +138,7 @@ const Section2 = () => {
                           {item.content}
                         </p>
                         <NavLink
-                          to={`/a/${item.serialNumber}/${item.title}`}
+                          to={`/whats-on/${item.title}`}
                           className="btn text-light border border-warning rounded-0 custom-cursor mt-auto align-self-center"
                           onClick={() => {
                             window.scrollTo(0, 0);

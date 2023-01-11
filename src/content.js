@@ -611,7 +611,7 @@ const WhatsOn = [
           </p>
     </div>`,
     serialNumber: 28,
-    title: "valentinesday-indian-restaurant",
+    title: "VALENTINES DAY",
     shortContent:
       "Award-winning, luxury Indian restaurant, Colonel Saab will celebrate its first anniversary this October with...",
   },
@@ -622,12 +622,7 @@ const WhatsOn = [
     image: VegunaryImage,
     content: `<div className="row text-center">
     <p>
-      We will be serving a special tantalising tasting menu in addition to
-      A whole month dedicated to healthier eating and doing more for our
-      planet. After last year's huge success, we are bringing back our
-      Veganuary menu for all of our distinguished customers. Expect to see
-      the mouth watering Jack fruit tacos back on the menu, due to popular
-      demand, as well as more new dishes created for one month only.
+    A whole month dedicated to healthier eating and doing more for our planet. After last year's huge success, we are bringing back our Veganuary menu for all of our distinguished customers. Expect to see the mouth watering Jack fruit tacos back on the menu, due to popular demand, as well as more new dishes created for one month only. 
     </p>
     <p>
       As most of you may know Indian cuisine has always been ahead of the
