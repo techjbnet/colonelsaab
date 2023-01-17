@@ -10,9 +10,9 @@ const Press = () => {
     <Layout>
       <Section1 />
       
-      <Section2 year={year} />
+      <Section2/>
 
-      <Section3 setYear={setYear} />
+      <Section3/>
     </Layout>
   );
 };

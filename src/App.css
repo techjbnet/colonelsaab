@@ -261,6 +261,10 @@ body {
 .dropup-content a:hover {
   background-color: #f99f49;
 }
+.pressPageMargin{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 @media only screen and (min-width: 992px) {
   .slick-prev:before {
@@ -269,6 +273,10 @@ body {
 
   .slick-next:before {
     font-size: 2rem !important;
+  }
+  .pressPageMargin{
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

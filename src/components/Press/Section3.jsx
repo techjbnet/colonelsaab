@@ -1,40 +1,39 @@
-// import { useState, useEffect } from "react";
-import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
-
-const Section3 = (props) => {
-  // const [sliderValue, setSliderValue] = useState({
-  //   0: 2021,
-  //   50: 2022,
-  //   100: 2023,
-  // });
-
-  const sliderValue = {
-    0: new Date().getFullYear() - 1,
-    100: new Date().getFullYear(),
-  };
-
-
+import React from 'react';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import CardImage from '../../assets/images/award/WhatsApp Image 2022-12-21 at 3.50 1.png';
+const Section3 = () => {
   return (
-    <div className="container">
-      <div className="text-center mb-5">
-        <Slider
-          className="w-50 mx-auto"
-          min={0}
-          // defaultValue={0}
-          marks={sliderValue}
-          step={null}
-          onChange={(value) => {
-            console.log(value);
-            if (value === 0) {
-              props.setYear(new Date().getFullYear() - 1);
-            } else {
-              props.setYear(new Date().getFullYear());
-            }
-          }}
-        />
+    <Container className='my-3'>
+      <Row xs={1} md={3} className="g-4">
+        {Array.from({ length: 6 }).map((_, idx) => (
+          <Col>
+            <Card className='shadow'>
+              <Card.Img variant="top" src={CardImage} />
+              <Card.Body>
+                <Card.Title className='text-success'>John Lewis to make final journey across <br /> Edmund Pettus Bridge in procession</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+      <div className='d-flex justify-content-center mt-3'>
+        <button className='px-5 py-3'
+        style={
+          {
+           border:"1px solid #C31815",
+           color:"#C31815",
+           fontSize:"14px",
+          }
+        }>
+            VIEW MORE
+        </button>
       </div>
-    </div>
+    </Container>
   );
 };
 
