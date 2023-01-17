@@ -36,6 +36,15 @@ const Section7 = () => {
       title: "first-year-anniversary-celebrations",
     },
     {
+      image: IndianRestaurantCoventGardenCsBestTreats,
+      headline: "First Year Anniversary Celebrations",
+      time: "12/09/2022",
+      content:
+        "Award-winning, luxury Indian restaurant, Colonel Saab will celebrate its first anniversary this October with...",
+      serialNumber: 27,
+      title: "first-year-anniversary-celebrations",
+    },
+    {
       image: PreTheatreMenusInHolbornSoho,
       headline: "<span>Pre-Theatre Menus in Holborn<br/><br/></span>",
       time: "12/09/2022",

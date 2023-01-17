@@ -266,6 +266,25 @@ body {
   margin-right: 10%;
 }
 
+.image-container{
+  width: 100%;
+  height: 50%;
+}
+.cover-image-whatsonpage{
+  width: 100%;
+  height: 640px;
+ object-fit:contain;
+  max-width: 100%;
+ 
+}
+.slider-image-whatsonpage{
+  width: 100%;
+  height: 640px;
+ object-fit:cover;
+  max-width: 100%;
+ 
+}
+
 @media only screen and (min-width: 992px) {
   .slick-prev:before {
     font-size: 2rem !important;

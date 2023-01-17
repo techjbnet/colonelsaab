@@ -1,25 +1,30 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import Layout from "../components/Layout";
 import Slider from "../components/WhatsOnInner/Slider";
 import Section1 from "../components/WhatsOnInner/Section1";
 import BookingModal from "../components/Layout/Modal/BookingModal";
 import { WhatsOn } from "../content";
-
 const WhatsOnInner = () => {
+  //const navigate=useNavigate()
   const [blog, setBlog] = useState();
   const [bookingModal, setBookingModal] = useState(false);
-  let { serialNumber, title } = useParams();
+  let {  title } = useParams();
 
   useEffect(() => {
     setBlog(
       WhatsOn.find(
         (element) =>
-          element.serialNumber == serialNumber && element.title == title,
+          element.title == title,
       ),
     );
-  }, [serialNumber, title]);
+  }, [ title]);
+
+//   useEffect(() => {
+//  navigate('/whats-on/VALENTINES%20DAY')
+//   }, [])
+  
 
   return (
     <Layout>

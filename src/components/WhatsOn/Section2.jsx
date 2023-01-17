@@ -3,11 +3,13 @@ import { NavLink } from "react-router-dom";
 import AfternoonTeaHolbornCoventGardenBloomsbury from "../../assets/images/shopimages/afternoon-tea-holborn-covent-garden-bloomsbury.webp";
 import RestaurantCoventGardenNewYearsEve22a from "../../assets/images/shopimages/restaurant-covent-garden-new-years-eve-22a.webp";
 import IndianRestaurantCoventGardenCsBestTreats from "../../assets/images/shopimages/indian-restaurant-covent-garden-cs-best-treats.webp";
-import PreTheatreMenusInHolbornSoho from "../../assets/images/shopimages/pre-theatre-menus-in-holborn-soho.webp";
+//import PreTheatreMenusInHolbornSoho from "../../assets/images/shopimages/pre-theatre-menus-in-holborn-soho.webp";
 import IndianRestaurantCoventGardenSoho2z from "../../assets/images/shopimages/indian-restaurant-covent-garden-soho-2z.webp";
 import RestaurantCoventGardenKebabFestival08 from "../../assets/images/shopimages/restaurant-covent-garden-kebab-festival-08.webp";
 import RestaurantIndianHolbornCoventGardenBloomsburySoho3 from "../../assets/images/shopimages/restaurant-indian-holborn-covent-garden-bloomsbury-soho-3.webp";
 import RestaurantIndianCoventGardenHighballM from "../../assets/images/shopimages/restaurant-indian-covent-garden-highball-m.webp";
+import IndianRestaurantVagunarysWhatsOnImage from "../../assets/images/shopimages/vegan.png"
+import IndianRestaurantValentinesWhatsOnImage from "../../assets/images/shopimages/valentines-whatson-image.jpg"
 
 const Section2 = () => {
   const [slicedIndex, setSlicedIndex] = useState(3);
@@ -22,6 +24,24 @@ const Section2 = () => {
       title: "new-years-eve-indian-restaurant-covent-garden-vegan",
     },
     {
+      image: IndianRestaurantVagunarysWhatsOnImage,
+      headline: "VEGANUARY",
+      time: "12/11/2022",
+      content:
+        "If you haven't heard of Veganuary yet, don’t worry we’re here to tell you all about it!",
+      serialNumber: 27,
+      title: "vegunary-indian-restaurant",
+    },
+    {
+      image: IndianRestaurantValentinesWhatsOnImage,
+      headline: "VALENTINES DAY",
+      time: "12/11/2022",
+      content:
+        "Valentine's at Colonel Saab ",
+      serialNumber: 28,
+      title: "VALENTINES DAY",
+    },
+    {
       image: IndianRestaurantCoventGardenCsBestTreats,
       headline: "First Year Anniversary Celebrations",
       time: "12/09/2022",
@@ -30,15 +50,7 @@ const Section2 = () => {
       serialNumber: 10,
       title: "first-year-anniversary-celebrations",
     },
-    {
-      image: PreTheatreMenusInHolbornSoho,
-      headline: "Pre-Theatre Menus in Holborn",
-      time: "12/09/2022",
-      content:
-        "Colonel Saab is a modern Indian cuisine restaurant situated in the heart of the city, just a stone's throw away from bustling Covent Garden and the ex...",
-      serialNumber: 11,
-      title: "pre-theatre-menus-in-holborn",
-    },
+  
     {
       image: IndianRestaurantCoventGardenSoho2z,
       headline: "Christmas Events at Colonel Saab",
@@ -113,12 +125,12 @@ const Section2 = () => {
                         <h5 className="card-title text-success">
                           {item.headline}
                         </h5>
-                        <p
+                        {/* <p
                           className="card-text text-success"
                           style={{ fontSize: "0.8rem" }}
                         >
                           Posted: {item.time}
-                        </p>
+                        </p> */}
                         <p
                           className="card-text text-light"
                           // style={{ fontSize: "0.8rem" }}
@@ -126,7 +138,7 @@ const Section2 = () => {
                           {item.content}
                         </p>
                         <NavLink
-                          to={`/a/${item.serialNumber}/${item.title}`}
+                          to={`/whats-on/${item.title}`}
                           className="btn text-light border border-warning rounded-0 custom-cursor mt-auto align-self-center"
                           onClick={() => {
                             window.scrollTo(0, 0);
